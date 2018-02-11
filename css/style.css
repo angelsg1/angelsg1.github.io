@@ -93,6 +93,9 @@ section#home-page {
   @media (max-width: 768px) {
     section#home-page {
       height: auto; } }
+  section#home-page #typed {
+    font-family: Roboto-regular, helvetica, arial;
+    font-size: 28px; }
   section#home-page .hero-button {
     background-color: transparent;
     font-family: Roboto-regular, helvetica, arial;
@@ -100,7 +103,7 @@ section#home-page {
     border: 3px solid #ffffff;
     color: #ffffff;
     font-size: 16px;
-    margin-bottom: 70px; }
+    margin-bottom: 30px; }
   section#home-page .hero-button:hover {
     color: #f38181;
     border: 3px solid #f38181;
@@ -136,7 +139,7 @@ section#home-page {
   section#home-page .container hr {
     border-top: 3px solid #ffffff;
     width: 80px;
-    padding-bottom: 30px; }
+    padding-bottom: 20px; }
   section#home-page .col-md-3 hr {
     border-top: 3px solid #ffffff;
     width: 100%;
