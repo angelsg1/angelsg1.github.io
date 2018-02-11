@@ -109,11 +109,11 @@ h4 {
     font-family: 'Kaushanscript';
     font-size: 24px;
     text-align: center;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-bottom: 20px;
     
     @media (max-width: 768px){
-        padding-top: 40px;
+        padding-top: 30px;
         font-size: 18px;
         padding-bottom: 10px;
         
@@ -214,7 +214,7 @@ section#home-page {
     
     .container{
         color: $white;
-        padding-top: 50px;
+        padding-top: 30px;
         padding-bottom: 20px;
     }
     
@@ -416,14 +416,20 @@ section#u-designs {
             position: relative;
         }
     
+
+    
         .ipad {
             margin: 0 auto;
             text-align: center;
+            
         }
         .iphone {
             position: absolute;
             top: 480px;
             left: 650px;
+            
+            
+
        
             @media (max-width: 992px) { 
                 left: 450px;
@@ -474,6 +480,7 @@ section#what-we-do {
             border: 2px solid $green;
             margin-top: 30px;
             margin-left: 30px;
+    
             
         }
         
@@ -481,6 +488,11 @@ section#what-we-do {
             margin-top: 40px;
             margin-bottom: 30px;
         }
+        
+         @media (max-width: 992px) {
+               margin-left: 20px;
+               padding: 20px;
+            }
         
         .hr-signature {
             border-top: 3px solid $pink;
@@ -495,31 +507,32 @@ section#what-we-do {
         
         h4 {
             position: absolute;
-            top: 110px;
+            top: 185px;
             left: 85px;
+            padding: 0;
             
             
             @media (max-width: 1200px) {
-                top: 110px;
+                top: 185px;
                 left: 90px;
             }
             
             @media (max-width: 992px) {
-                top: 150px;
+                top: 220px;
                 left: 85px;
             }
             @media (max-width: 768px) {
-                top: 130px;
-                left: 80px;
+                top: 170px;
+                left: 60px;
               
             }
             @media (max-width: 576px) { 
-                top: 158px;
-                left: 75px;
+                top: 230px;
+                left: 65px;
             }
             
             @media (max-width: 414px) { 
-                top: 190px;
+                top: 260px;
                 left: 65px;
             }
           
@@ -602,6 +615,77 @@ section#our-work {
         
     .container-fluid {
         
+        .work-img-container {
+        position: relative;
+        
+        .overlay2 {
+              position: absolute;
+              bottom: 0;
+              left: 100%;
+              right: 0;
+              background-color: $green;
+              overflow: hidden;
+              width: 0;
+              height: 100%;
+              transition: .5s ease;
+        }
+        .overlay3 {
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              background-color: #022061;
+              overflow: hidden;
+              width: 0;
+              height: 100%;
+              transition: .5s ease; 
+            }
+            
+        .overlay4 {
+              position: absolute;
+              bottom: 100%;
+              left: 0;
+              right: 0;
+              background-color: $pink;
+              overflow: hidden;
+              width: 100%;
+              height:0;
+              transition: .5s ease;
+            }
+        
+        .text {
+                color: $white;
+                  font-size: 20px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  -ms-transform: translate(-50%, -50%);
+                  white-space: nowrap;
+            } 
+        }
+        .work-img-container:hover .overlay2 {
+           width: 100%;
+            left: 0;
+            opacity: 0.9;
+            
+        }
+        
+        .work-img-container:hover .overlay3 {
+           width: 100%;
+            opacity: 0.9;
+            
+        }
+        
+        .work-img-container:hover .overlay4 {
+          bottom: 0;
+          height: 100%;
+             opacity: 0.9;
+        }
+
+        
+        
+        
         
         .card-columns {
            
@@ -635,37 +719,33 @@ section#our-work {
                 }
             @media (max-width: 576px) {
                 
-                top: 150px;
-                left: 5px;
+                display: none;
             }
             
             @media (max-width: 414px) { 
-                top: 170px;
-                left: 15px;
+                display: none;
             }
             }
         h4 {
             position: absolute;
-            top: 110px;
+            top: 130px;
             left: 85px;
             
             @media (max-width: 992px) {
-                top: 140px;
+                top: 130px;
                 left: 85px;
             }
             @media (max-width: 768px) {
-                top: 70px;
+                top: 80px;
                 left: 75px;
               
             }
             @media (max-width: 576px) { 
-                top: 60px;
-                left: 65px;
+                display: none;
             }
             
             @media (max-width: 414px) { 
-                top: 120px;
-                left: 75px;
+                display: none;
             }
           
         }
@@ -834,5 +914,7 @@ footer#footer{
 }
 
 
+
+// CSS Animation classes //
 
 

@@ -62,11 +62,11 @@ h4 {
   font-family: 'Kaushanscript';
   font-size: 24px;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 20px; }
   @media (max-width: 768px) {
     h4 {
-      padding-top: 40px;
+      padding-top: 30px;
       font-size: 18px;
       padding-bottom: 10px; } }
 
@@ -134,7 +134,7 @@ section#home-page {
       transition: all 0.2s ease-in; }
   section#home-page .container {
     color: #ffffff;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 20px; }
   section#home-page .container hr {
     border-top: 3px solid #ffffff;
@@ -287,6 +287,10 @@ section#what-we-do {
     section#what-we-do .container-fluid p {
       margin-top: 40px;
       margin-bottom: 30px; }
+    @media (max-width: 992px) {
+      section#what-we-do .container-fluid {
+        margin-left: 20px;
+        padding: 20px; } }
     section#what-we-do .container-fluid .hr-signature {
       border-top: 3px solid #f38181;
       width: 50px;
@@ -296,27 +300,28 @@ section#what-we-do {
           width: 40px; } }
     section#what-we-do .container-fluid h4 {
       position: absolute;
-      top: 110px;
-      left: 85px; }
+      top: 185px;
+      left: 85px;
+      padding: 0; }
       @media (max-width: 1200px) {
         section#what-we-do .container-fluid h4 {
-          top: 110px;
+          top: 185px;
           left: 90px; } }
       @media (max-width: 992px) {
         section#what-we-do .container-fluid h4 {
-          top: 150px;
+          top: 220px;
           left: 85px; } }
       @media (max-width: 768px) {
         section#what-we-do .container-fluid h4 {
-          top: 130px;
-          left: 80px; } }
+          top: 170px;
+          left: 60px; } }
       @media (max-width: 576px) {
         section#what-we-do .container-fluid h4 {
-          top: 158px;
-          left: 75px; } }
+          top: 230px;
+          left: 65px; } }
       @media (max-width: 414px) {
         section#what-we-do .container-fluid h4 {
-          top: 190px;
+          top: 260px;
           left: 65px; } }
 
 section#our-team {
@@ -363,6 +368,58 @@ section#our-work {
     @media (max-width: 768px) {
       section#our-work .hr-header {
         padding-bottom: 10px; } }
+  section#our-work .container-fluid .work-img-container {
+    position: relative; }
+    section#our-work .container-fluid .work-img-container .overlay2 {
+      position: absolute;
+      bottom: 0;
+      left: 100%;
+      right: 0;
+      background-color: #95e1d3;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .5s ease; }
+    section#our-work .container-fluid .work-img-container .overlay3 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #022061;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .5s ease; }
+    section#our-work .container-fluid .work-img-container .overlay4 {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background-color: #f38181;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease; }
+    section#our-work .container-fluid .work-img-container .text {
+      color: #ffffff;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      white-space: nowrap; }
+  section#our-work .container-fluid .work-img-container:hover .overlay2 {
+    width: 100%;
+    left: 0;
+    opacity: 0.9; }
+  section#our-work .container-fluid .work-img-container:hover .overlay3 {
+    width: 100%;
+    opacity: 0.9; }
+  section#our-work .container-fluid .work-img-container:hover .overlay4 {
+    bottom: 0;
+    height: 100%;
+    opacity: 0.9; }
   section#our-work .container-fluid .card-columns {
     margin-bottom: 10px;
     width: 100%; }
@@ -382,32 +439,28 @@ section#our-work {
           top: 120px; } }
       @media (max-width: 576px) {
         section#our-work .container.feedback .hr-signature {
-          top: 150px;
-          left: 5px; } }
+          display: none; } }
       @media (max-width: 414px) {
         section#our-work .container.feedback .hr-signature {
-          top: 170px;
-          left: 15px; } }
+          display: none; } }
     section#our-work .container.feedback h4 {
       position: absolute;
-      top: 110px;
+      top: 130px;
       left: 85px; }
       @media (max-width: 992px) {
         section#our-work .container.feedback h4 {
-          top: 140px;
+          top: 130px;
           left: 85px; } }
       @media (max-width: 768px) {
         section#our-work .container.feedback h4 {
-          top: 70px;
+          top: 80px;
           left: 75px; } }
       @media (max-width: 576px) {
         section#our-work .container.feedback h4 {
-          top: 60px;
-          left: 65px; } }
+          display: none; } }
       @media (max-width: 414px) {
         section#our-work .container.feedback h4 {
-          top: 120px;
-          left: 75px; } }
+          display: none; } }
 
 section#feedback {
   background-image: url("../images/uniquedesingbackground.jpg");

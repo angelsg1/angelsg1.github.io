@@ -430,9 +430,9 @@
 		strings: ["I'm a responsive template", "Build with HTML, CSS and jQuery", "Hope you will like it!", "Have a great day!"],
 		stringsElement: null,
 		// typing speed
-		typeSpeed: -1,
+		typeSpeed: 10,
 		// time before typing starts
-		startDelay: 2,
+		startDelay: 5,
 		// backspacing speed
 		backSpeed: 2,
 		// shuffle the strings
@@ -446,7 +446,7 @@
 		// show cursor
 		showCursor: true,
 		// character for cursor
-		cursorChar: "|",
+		cursorChar: ".|",
 		// attribute to type (null == text)
 		attr: null,
 		// either html or text

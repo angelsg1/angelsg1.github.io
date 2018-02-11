@@ -28,15 +28,36 @@ $(document).ready(function(){
 
 // Numbers count //
 
+var eventFired = false,
+    objectPositionTop = $('#about-us').offset().top;
 
-$('.count').each(function () {
-    $(this).prop('Counter',1).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 8000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
+$(window).on('scroll', function() {
+
+ var currentPosition = $(document).scrollTop();
+ if (currentPosition > objectPositionTop && eventFired === false) {
+   eventFired = true;
+   // your code
+         $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 6000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
     });
+     
+     
+ }
+
 });
+
+
+
+
+// Fade In animation for Ipad and Iphone images //
+
+
+       
