@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // smooth scroll between sections //
 
 $(document).ready(function(){
@@ -40,3 +41,6 @@ $('.count').each(function () {
         }
     });
 });
+=======
+$(document).ready(function(){$(".navbar a").on('click',function(event){if(this.hash!==""){event.preventDefault();var hash=this.hash;$('html, body').animate({scrollTop:$(hash).offset().top},800,function(){window.location.hash=hash;});}});});
+>>>>>>> 696fddc756135cd71e379e3a1f417e1c590c3218
